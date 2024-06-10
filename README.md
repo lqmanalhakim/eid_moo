@@ -28,3 +28,4 @@ The objective of the app is to streamline and simplify the process of reserving 
 ### Navigation Diagram
 
 ### Sequence Diagram
+![Sequence Diagram drawio](https://github.com/lqmanalhakim/eid_moo/assets/133849888/b91195b0-695e-4c74-b3a1-e1cd6808b13e)
