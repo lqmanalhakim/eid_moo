@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1056840809882",
+    "project_id": "eid-moo",
+    "storage_bucket": "eid-moo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056840809882:android:bc24a4dc0d7aeaefaf8e23",
+        "android_client_info": {
+          "package_name": "com.example.eid_moo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056840809882-bvg21k9rlr3qhn359njfivs672943p0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNd1E6t3TY_TOJ4mFuDavP6PTJoQbZ1pw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056840809882-bvg21k9rlr3qhn359njfivs672943p0j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1056840809882-1v5vucfptqpfjmr37d98h7d0vvdmrjg8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.eidMoo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
