@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1071541737764",
+    "project_id": "finalcsci4311",
+    "storage_bucket": "finalcsci4311.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071541737764:android:fe88e262c54cc6b0923bb1",
+        "android_client_info": {
+          "package_name": "com.example.eid_moo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTKr_vROtck14ZawLo0eGCFCvz8sPJWFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

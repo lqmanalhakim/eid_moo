@@ -28,3 +28,5 @@ The objective of the app is to streamline and simplify the process of reserving 
 ### Navigation Diagram
 
 ### Sequence Diagram
+
+![]
