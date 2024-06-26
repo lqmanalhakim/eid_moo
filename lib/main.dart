@@ -1,8 +1,10 @@
+
 import 'package:eid_moo/admin_page/admin_page.dart';
 import 'package:eid_moo/page/details_page.dart';
 import 'package:eid_moo/page/payment_page.dart';
 import 'package:eid_moo/page/profile_page.dart';
 import 'package:firebase_core/firebase_core.dart';
+
 import 'package:flutter/material.dart';
 
 
@@ -12,7 +14,10 @@ void main() async {
   runApp(MyApp());
 }
 
+final navigatorKey = GlobalKey<NavigatorState>();
+
 class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,7 +30,7 @@ class MyApp extends StatelessWidget {
         '/payment': (context) => PaymentPage(),
         '/profile': (context) => ProfilePage(),
         '/admin': (context) => AdminPage(),
-      },
+      }
     );
   }
 }
