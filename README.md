@@ -29,3 +29,5 @@ The objective of the app is to streamline and simplify the process of reserving 
 <img width="1138" alt="eid-moo" src="https://github.com/lqmanalhakim/eid_moo/assets/75507209/bddd50cd-7645-4435-af7c-1bcfb72051b7">
 
 ### Sequence Diagram
+
+### Weekly Progress Report
