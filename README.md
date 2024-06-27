@@ -11,9 +11,9 @@ This app simplifies the process of reserving portions of a cow for Qurban during
 ### Objective
 The objective of the app is to streamline and simplify the process of reserving and managing portions of a cow for Qurban, ensuring efficient coordination with local suraus and providing a seamless and organized experience for users participating in the Eid al-Adha sacrifice.
 ### Features and Functionalities:
-1. Authorization : Authorizing User or Admin. 
+1. Authorization : Authorizing for Admin. 
 2. User Profiles : Detail information and history of booking .
-3. Detail System : Detail information of the list of cow and portion available.
+3. Detail System : Detail information of the list of cow and parts available.
 4. Payment System : User need to fill borang akad and show the proof of payment.
 5. Approved System : Show the name and detail information of buyer for admin to check and approved.
 
@@ -21,7 +21,7 @@ The objective of the app is to streamline and simplify the process of reserving 
 ### UI and Reusable Widgets
 1. Authorization screen : login form
 2. Profile Screen : User information and history of booking.
-3. Detail Screen : Cow information. 
+3. Detail Screen : Cow information and drawer navigation for other page. 
 4. Payment Screen : akad form and fill receipt payment.
 5. Admin Screen : Buyer Information and Approved function.
 
