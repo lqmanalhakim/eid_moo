@@ -45,6 +45,19 @@ The objective of the app is to streamline and simplify the process of reserving 
 ### Weekly Progress Report
 ![Screenshot (509)](https://github.com/lqmanalhakim/eid_moo/assets/133849888/4ec70ef9-5f9a-49f9-970a-6cfc1b023a74)
 
+## User Interfaces
+### Details Page
+![photo_2024-06-27_21-58-28](https://github.com/lqmanalhakim/eid_moo/assets/133849888/89b8b6f0-8e3f-4c56-bda7-dcc4ae58800b)
+### Payment Page
+![photo_2024-06-27_21-58-49](https://github.com/lqmanalhakim/eid_moo/assets/133849888/7f5d3743-33b5-48d7-b6ec-e4da328bfb6c)
+### Profile Page
+![photo_2024-06-27_21-58-51](https://github.com/lqmanalhakim/eid_moo/assets/133849888/acc253b2-f6a7-46e4-8009-077531c79d4f)
+### Admin Login Page
+![photo_2024-06-27_21-58-56](https://github.com/lqmanalhakim/eid_moo/assets/133849888/367b903c-4713-4703-97ba-fa776b3268ee)
+![photo_2024-06-27_21-58-58](https://github.com/lqmanalhakim/eid_moo/assets/133849888/77824b55-aca3-4869-8822-9211e82bc9ea)
+### Detail Payment Page
+![photo_2024-06-27_21-59-01](https://github.com/lqmanalhakim/eid_moo/assets/133849888/2668868f-b389-4a2f-9c43-5f4c5d867fda)
+
 ## Reference
 1. [Borang Pendaftaran Koraban](https://daftar.ybim.org.my/v2/SSN)
 2. [Blog EZ Qurban](https://blog.ezqurban.org/lafaz-niat-korban-lembu-dalam-rumi/)
