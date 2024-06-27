@@ -37,10 +37,10 @@ The objective of the app is to streamline and simplify the process of reserving 
 5. Admin Screen : Buyer Information and Approved function.
 
 ### Navigation Diagram
-![navigationdiagram drawio](https://github.com/lqmanalhakim/eid_moo/assets/133849888/52cf5666-f7ef-4528-93f1-16356f04c0b2)
+![navigationdiagram drawio (1)](https://github.com/lqmanalhakim/eid_moo/assets/133849888/55e56f70-8140-4a61-9f15-f6a3d573c73e)
 
 ### Sequence Diagram
-![Sequence Diagram drawio (1)](https://github.com/lqmanalhakim/eid_moo/assets/133849888/446e71ba-faa4-462f-b57a-9adc27d16167)
+![Sequence Diagram drawio (2)](https://github.com/lqmanalhakim/eid_moo/assets/133849888/a872f26b-4e10-4673-8fe1-bb896adb32eb)
 
 ### Weekly Progress Report
 ![Screenshot (509)](https://github.com/lqmanalhakim/eid_moo/assets/133849888/4ec70ef9-5f9a-49f9-970a-6cfc1b023a74)
