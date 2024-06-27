@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_storage/firebase_storage.dart';
+import 'package:rounded_loading_button_plus/rounded_loading_button.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PaymentDetailsPage extends StatelessWidget {
   final DocumentSnapshot payment;
   final CollectionReference cowsCollection = FirebaseFirestore.instance.collection('cows');
-
+  final RoundedLoadingButtonController _btnController = RoundedLoadingButtonController();
+  
   PaymentDetailsPage({required this.payment});
 
-  Future<void> _updateCowPartsStatus(bool approve) async {
+  Future<void> _updateCowPartsStatus(bool approve, BuildContext context) async {
     int partsRequested = payment['parts_requested'];
 
     if (approve) {
@@ -58,14 +60,25 @@ class PaymentDetailsPage extends StatelessWidget {
     // Notify the user (you may implement this as an email or an in-app notification)
     // This is just a placeholder for notification logic
     print('Notification sent to user: ${payment['name']}');
+
+    // Close the payment details page and return to the admin page
+    Navigator.pop(context);
   }
 
-  Future<void> _approvePayment() async {
-    await _updateCowPartsStatus(true);
+  Future<void> _approvePayment(BuildContext context) async {
+    await _updateCowPartsStatus(true, context);
   }
 
-  Future<void> _rejectPayment() async {
-    await _updateCowPartsStatus(false);
+  Future<void> _rejectPayment(BuildContext context) async {
+    await _updateCowPartsStatus(false, context);
+  }
+
+  Future<void> _launchURL(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 
   @override
@@ -81,6 +94,7 @@ class PaymentDetailsPage extends StatelessWidget {
             Text('Name: ${payment['name']}'),
             Text('Address: ${payment['address']}'),
             Text('Phone: ${payment['phone']}'),
+            Text('Email: ${payment['email']}'),
             Text('Parts Requested: ${payment['parts_requested']}'),
             Text('Qurban Names: ${payment['qurban_names'].join(', ')}'),
             payment['receipt_url'] != null
@@ -88,24 +102,25 @@ class PaymentDetailsPage extends StatelessWidget {
                     children: [
                       Text('Receipt:'),
                       ElevatedButton(
-                        onPressed: () {
-                          // You can use a package like url_launcher to open the URL in a web browser
-                        },
+                        onPressed: () => _launchURL(payment['receipt_url']),
                         child: Text('View Receipt'),
                       ),
                     ],
                   )
                 : Container(),
-            SizedBox(height: 16.0),
-            ElevatedButton(
-              onPressed: _approvePayment,
-              child: Text('Approve'),
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+            RoundedLoadingButton(
+              controller: _btnController,
+              onPressed: () => _approvePayment(context),
+              child: Text('Approve', style: TextStyle(color: Colors.white)),
+              color: Colors.green,
+              successColor: Colors.green,
             ),
-            ElevatedButton(
-              onPressed: _rejectPayment,
-              child: Text('Reject'),
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+            RoundedLoadingButton(
+              controller: _btnController,
+              onPressed: () => _rejectPayment(context),
+              child: Text('Reject', style: TextStyle(color: Colors.white)),
+              color: Colors.red,
+              successColor: Colors.red,
             ),
           ],
         ),

@@ -40,6 +40,10 @@ dependencies:
   file_picker: ^8.0.5
   firebase_storage: ^12.0.1
   url_launcher: ^6.3.0
+  firebase_auth: ^5.1.1
+  firebase_messaging: ^15.0.2
+  rounded_loading_button_plus: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
 
 dev_dependencies:
   flutter_test:
@@ -52,12 +56,20 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
 
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/lembu.png"
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  assets:
+    - assets/hargalembu.png
+    - assets/lembu.png
+    
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

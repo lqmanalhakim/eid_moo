@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class DetailsPage extends StatelessWidget {
-  final CollectionReference cowsCollection = FirebaseFirestore.instance.collection('cows');
+  final CollectionReference cowsCollection =
+      FirebaseFirestore.instance.collection('cows');
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +52,7 @@ class DetailsPage extends StatelessWidget {
               leading: Icon(Icons.admin_panel_settings),
               title: Text('Admin Page'),
               onTap: () {
-                Navigator.pushNamed(context, '/admin');
+                Navigator.pushNamed(context, '/adminLogin');
               },
             ),
           ],
@@ -79,17 +80,22 @@ class DetailsPage extends StatelessWidget {
                 child: ListTile(
                   title: Text('Cow ${index + 1}'),
                   subtitle: StreamBuilder<QuerySnapshot>(
-                    stream: cow.reference.collection('parts').orderBy('name').snapshots(),
+                    stream: cow.reference
+                        .collection('parts')
+                        .orderBy('name')
+                        .snapshots(),
                     builder: (context, partSnapshot) {
                       if (partSnapshot.hasError) {
                         print('Error: ${partSnapshot.error}');
                         return Text('Error: ${partSnapshot.error}');
                       }
-                      if (partSnapshot.connectionState == ConnectionState.waiting) {
+                      if (partSnapshot.connectionState ==
+                          ConnectionState.waiting) {
                         return Text('Loading...');
                       }
                       final parts = partSnapshot.data!.docs;
-                      print('Fetched ${parts.length} parts for Cow ${index + 1}');
+                      print(
+                          'Fetched ${parts.length} parts for Cow ${index + 1}');
                       if (parts.isEmpty) {
                         return Text('No parts available');
                       }
@@ -99,14 +105,25 @@ class DetailsPage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: parts.map((part) {
                           print('Part ${part['name']}: ${part['status']}');
-                          return Text(
-                            '${part['name']}: ${part['status']}',
-                            style: TextStyle(
+                          return ListTile(
+                            title: Text('${part['name']}'),
+                            subtitle: Row(
+                              children: [
+                                Text('${part['status']}'),
+                                if (part['status'] == 'pending')
+                                  SizedBox(width: 8),
+                                if (part['status'] == 'pending')
+                                  Icon(Icons.access_time,
+                                      color: Colors.orange),
+                              ],
+                            ),
+                            trailing: Icon(
+                              part['status'] == 'available'
+                                  ? Icons.check_circle
+                                  : Icons.cancel,
                               color: part['status'] == 'available'
                                   ? Colors.green
-                                  : part['status'] == 'not available'
-                                      ? Colors.red
-                                      : Colors.orange,
+                                  : Colors.red,
                             ),
                           );
                         }).toList(),

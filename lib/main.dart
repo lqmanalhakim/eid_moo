@@ -1,5 +1,6 @@
 
 import 'package:eid_moo/admin_page/admin_page.dart';
+import 'package:eid_moo/login_page/admin_login.dart';
 import 'package:eid_moo/page/details_page.dart';
 import 'package:eid_moo/page/payment_page.dart';
 import 'package:eid_moo/page/profile_page.dart';
@@ -21,15 +22,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Cow Parts App',
+      title: 'Eidmoo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      debugShowCheckedModeBanner: false,
       home: DetailsPage(),
       routes: {
         '/payment': (context) => PaymentPage(),
         '/profile': (context) => ProfilePage(),
         '/admin': (context) => AdminPage(),
+        '/adminLogin': (context) => AdminLoginPage(),
       }
     );
   }
