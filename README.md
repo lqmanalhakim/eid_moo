@@ -64,9 +64,9 @@ The objective of the app is to streamline and simplify the process of reserving 
 <img src="https://github.com/lqmanalhakim/eid_moo/assets/133849888/2668868f-b389-4a2f-9c43-5f4c5d867fda" width="300">
 
 ## Reference
-1. [Borang Pendaftaran Koraban](https://daftar.ybim.org.my/v2/SSN)
-2. [Blog EZ Qurban](https://blog.ezqurban.org/lafaz-niat-korban-lembu-dalam-rumi/)
-3. [Borang Akad Korban 1434H](https://docs.google.com/file/d/0ByKX82NSbnR2enVLSzNRVG5kUW8/edit?pli=1&resourcekey=0-JbdH88OPqMm357KXNn7RcA)
-4. [rounded_loading_button_plus 3.0.1 ](https://pub.dev/packages/rounded_loading_button_plus)
-5. [widgets library](https://api.flutter.dev/flutter/widgets/widgets-library.html)
+1. Borang Pendaftaran Korban. Kembara Korban 1001 Asnaf Sdn Bhd. (n.d.). [https://daftar.ybim.org.my/v2/SSN ](https://daftar.ybim.org.my/v2/SSN)
+2. Rostin, S. (2023, May 18). Lafaz NIAT Korban Lembu Dalam Rumi. Blog EZ Qurban. [https://blog.ezqurban.org/lafaz-niat-korban-lembu-dalam-rumi/ ](https://blog.ezqurban.org/lafaz-niat-korban-lembu-dalam-rumi/)
+3. Google. (n.d.). Borang Akad Korban 1434h.PDF. Google Drive. [https://docs.google.com/file/d/0ByKX82NSbnR2enVLSzNRVG5kUW8/edit?pli=1&resourcekey=0-JbdH88OPqMm357KXNn7RcA ](https://docs.google.com/file/d/0ByKX82NSbnR2enVLSzNRVG5kUW8/edit?pli=1&resourcekey=0-JbdH88OPqMm357KXNn7RcA)
+4. Rounded_loading_button_plus: Flutter Package. Dart packages. (2024, February 4). [https://pub.dev/packages/rounded_loading_button_plus  ](https://pub.dev/packages/rounded_loading_button_plus)
+5. Widgets library. widgets library - Dart API. (n.d.). [https://api.flutter.dev/flutter/widgets/widgets-library.html](https://api.flutter.dev/flutter/widgets/widgets-library.html)
 
